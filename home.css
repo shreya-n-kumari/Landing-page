@@ -1,0 +1,172 @@
+@import url('http://fonts.cdnfonts.com/css/noto-sans-balinese');
+@import url('http://fonts.cdnfonts.com/css/nollasans');
+@import url('http://fonts.cdnfonts.com/css/roblox-new');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.img-fluid::before{
+    content: "";
+    position: absolute;
+    background-image: url('img/1.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.8;
+    filter: blur(6px);
+    z-index: -1;
+}
+
+
+/* navbar styling */
+.header-wrapper .navbar{
+    background-color: rgb(211, 243, 232);
+    color: black;
+}
+.header-wrapper .navbar-brand{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* navbar lists form */
+.header-wrapper .navbar-nav{
+    font-family: 'Noto Sans Balinese', sans-serif;
+    font-weight: bolder;
+    /* word-spacing: 15px; */                                                
+}
+
+.navbar li a:hover{
+    color: grey;
+}
+.navbar li .active{
+    color: grey !important;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* style button */
+.btn {
+    border: 2px solid black;
+    color: rgb(33, 19, 19);
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.5px;
+}
+.btn:hover{
+    background-color: rgb(74, 56, 56);
+    color: white;
+}
+.banner .btn{
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 150px;
+}
+.submit-btn .btn{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+/* style form */
+.header-wrapper .form-control{
+    background: transparent;
+    font-family: 'Noto Sans Balinese', sans-serif;
+}
+
+form{
+    color: rgb(228, 228, 132);
+}
+
+.form-control{
+    background: transparent;
+}
+
+.container .form-group input::-webkit-input-placeholder{
+    color:rgb(33, 19, 19);
+}
+
+/* style heading and para */
+.banner{
+    color: rgb(228, 228, 132);
+}
+
+h1{
+    font-family: 'Gotham Black', sans-serif;
+    font-weight: bold;
+    font-size: invert;                                       
+}
+
+.container h5{
+    font-family: 'Inter', sans-serif !important;
+    font-weight: bolder;
+}
+
+p{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header-wrapper input{
+    font-size: medium;
+    font-family: 'Noto Sans', sans-serif;
+    display: block;
+    border: 2px solid rgb(33, 19, 19);
+}
+.header-wrapper input::-webkit-input-placeholder{
+    color:rgb(33, 19, 19);
+}
+
+/* login input */
+.container input{
+    border: 3px solid rgb(33, 19, 19);
+    border-radius: 10px;
+}
+
+
+/* footer style */
+footer{
+    width: 100vw;
+    margin-top: auto;
+}
+.single-footer-widget ul{
+    padding: 0;
+    margin: 0;
+}
+
+.single-footer-widget ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-address ul{
+    list-style-type: none;
+}
+
+.copy{
+    
+    background-color: black;
+}
+
+.footer-address ul.footer-contact-info li{
+    position: relative;
+    padding-left: 20px;
+    
+}
