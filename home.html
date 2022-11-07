@@ -14,7 +14,7 @@
   <body>   
     <div class="img-fluid">
     <header class="header-wrapper">
-        <nav class="navbar navbar-expand-lg bg-waning fixed-top pb-0" id="navbarScroll">
+        <nav class="navbar navbar-expand-lg bg-waning fixed-top pb-0" id=navbarScroll">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">PORTFOLIO</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +38,6 @@
                     <a class="nav-link"  href="#">CONTACT</a>
                     </li>
                 </ul>
-               <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn" type="submit">SEARCH</button>
-               </form>
           </div>
         </div>
       </nav>
@@ -50,15 +46,45 @@
     <!-- form code -->
     <div class="container mt-5 pt-3">
         <div class="row mt-5">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-12 mx-auto">
             <div class="banner">
               <h1>Web Design & <br>Development Course</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eos error atque nemo. 
                 Impedit quidem nobis ipsam omnis? Quia pariatur fugiat incidunt distinctio doloremque illo harum modi fugit hic officiis?</p>
-                <button type="button" class="btn">JOIN NOW</button>
+                <button type="button" class="btn" data-bs-target="#MyModel" data-bs-toggle="modal">JOIN NOW</button>
+
+                <div class="modal" id="MyModel">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="model-title text-center">Login Here</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                      </div>
+
+                        <div class="modal-body">
+                          <form action="">
+                            <div class="mb-2">
+                              <label class="form-lable">Name</label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-2">
+                              <label class="form-lable">Email</label>
+                              <input type="email" class="form-control">
+                            </div>
+                            <div class="mb-2">
+                              <label class="form-lable">Password</label>
+                              <input type="password" class="form-control">
+                            </div>
+                            <button type="login" class="btn mt-2">login</button>
+                          </form>
+                        </div>                        
+                      </div>
+                  </div>
+                </div>
             </div>
           </div>
-          <div class="col-lg-4 ms-auto">
+
+          <!-- <div class="col-lg-4 ms-auto">
             <div class="login d-flex justify-content-center mt-3">
               <h5>Login Here</h5>
             </div>
@@ -75,12 +101,86 @@
                 <button type="submit" class="btn btn-transparent mt-3 px-3">Submit</button>
               </div>
             </form>
-          </div>
+          </div> -->
         </div>
 
   </div>
     <!-- end form code -->
 </div>
+
+<!-- start of card -->
+      <div class="container mt-5">
+       <div class="row">
+        <h3 class="d-flex justify-content-center">Our Experts</h3>
+
+        <div class="col-lg-4 col-md-6 mt-3 mr-0">
+            <div class="card" style="width: 18rem;">
+              <img src="img/student.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Senior Designer</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn">Go somewhere</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-3 mr-0">
+            <div class="card" style="width: 18rem;">
+              <img src="img/student.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Junior Designer</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn">Go somewhere</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-3 mr-0">
+          <div class="card" style="width: 18rem;">
+            <img src="img/student.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Backend developer</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+       </div>
+      </div>
+<!-- end of card -->
+
+<section class="testimonial">
+    <div class="container mt-5">
+      <div class="row d-flex justify-content-evenly">
+
+        <h3 class="text-center mb-3">Customer Reviews.....</h3>
+        <div class="comment col-lg-5 col-md-6 p-3 mt-2">
+          <div class="profile">
+              <img src="img/baloon3.jpg" alt="" width="20px" height="30px" class="User">
+              <h4 class="text-center mt-0">Shreya Rani</h4>
+              <br>
+              <i class="fa fa-sharp fa-solid fa-quote-left"></i>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure non nostrum repellat, dolorum exercitationem sint eaque alias, porro soluta totam corrupti blanditiis dolore assumenda quis eum quae officia vel illum.
+              <i class="fa fa-sharp fa-solid fa-quote-right"></i>
+         </div>
+        </div>
+
+
+        <div class="comment col-lg-5 col-md-6 p-3 mt-2">
+          <div class="profile">
+            <img src="img/baloon3.jpg" alt="" width="20px" height="30px" class="User">
+              <h4 class="text-center">Shreya Rani</h4>
+              <br>
+              <i class="fa fa-sharp fa-solid fa-quote-left"></i>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quaerat quidem, consequuntur ratione autem et numquam totam labore iure ut veritatis dolorum quo, beatae voluptatem voluptas soluta ab maxime accusamus!
+              <i class="fa fa-sharp fa-solid fa-quote-right"></i>
+         </div>
+        </div>
+
+      </div>
+    </div>
+</section>
 
 <!-- Footer Section -->
   <footer class="footer-area bg-dark mt-5">
@@ -89,89 +189,114 @@
 
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="logo">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti eveniet alias harum nisi expedita quidem!</p>
+            <img src="img/images.png" class="img-responsive" alt="...">
+            <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti eveniet alias harum nisi expedita quidem!</p>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 col-sm-6">
-          <div class="single-footer-widget ps-5">
-            <h4 class="mb-2" style="letter-spacing:1.5px;">company</h4>
+        <div class="col-lg-2 col-md-6 col-sm-6 mt-2">
+          <div class="single-footer-widget">
+            <h4 class="mb-2" style="letter-spacing:1.5px;">Company</h4>
             <ul class="list-unstyled py-2 me-5">
               <li>
-                <a href="about.html">about</a>
+                <a href="about.html">About</a>
               </li>
               <li>
-                <a href="#">service</a>
+                <a href="#">Service</a>
               </li>
               <li>
-                <a href="#">design</a>
+                <a href="#">Design</a>
               </li>
               <li>
-                <a href="#">contact</a>
+                <a href="#">Contact</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="footer-address"> 
-              <h5 class="ms-5">Address</h5>
-              <ul class="footer-contact-info">
-                <li>
-                  <i class="fa fa-light fa-location-dot"></i>
-                      Kolkata City Head Offiec || RDB Boulevard , Regus 8th Floor Plot K-1 , Sector V , Block EP & GP. Salt Lake City Kolkata West Bengal 700091 India
+        <div class="col-lg-4 col-md-6 col-sm-6 mt-2">
+          <div class="single-footer-widget"> 
+              <h5 class="ms-2">Address</h5>
+              <ul class="footer-address-info mt-4">
+                <li class="d-flex">
+                  <i class="fa fa-light fa-location-dot mt-2"></i>
+                      <span class="ms-3">Kolkata City Head Offiec || RDB Boulevard , Regus 8th Floor Plot K-1 , Sector V , Block EP & GP. Salt Lake City Kolkata West Bengal 700091 India</span>
                 </li>
 
-                <li>
-                  <i class="fas fa-thin fa-location-dot"></i>
+                <li class="d-flex">
+                  <i class="fas fa-thin fa-location-dot mt-2"></i>
                    <span class="ms-3">Office Sector 15 Noida D-35 2nd Floor Noida U.P 201301 India</span>
                 </li>
 
-                <li>
-                  <i class="fa fa-duotone fa-location-dot"></i>
-                  Registered office : || Near Passport Office joytipuram Colony Khajpura Patna 800014 ||
+                <li class="d-flex">
+                  <i class="fa fa-duotone fa-location-dot mt-2"></i>
+                  <span class="ms-3">Registered office : || Near Passport Office joytipuram Colony Khajpura Patna 800014 ||</span>
                 </li>
-              </ul>
-
-              <ul class="social-info d-flex">
-                <li>
-                  <a href="https://www.facebook.com/" class="text-white me-4" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                  <li>
-                    <a href="https://twitter.com/" class="text-white me-4" target="_blank">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.google.com/" class="text-white me-4" target="_blank">
-                      <i class="fab fa-google"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/" class="text-white me-4" target="_blank">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-white me-4" target="_blank">
-                      <i class="fab fa-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-white me-4" target="_blank">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </li>                               
               </ul>
           </div>
         </div>
 
+        <div class="col-lg-3 col-md-6 col-sm-6 mt-2">
+          <div class="single-footer-widget ms-3">
+            <h5>Contact Info</h5>
+
+            <ul class="footer-contact-info mt-4">
+              <li>
+                <i class="fa fa-thin fa-envelope me-2"></i> Email: 
+                <a href="mailto:abcd@gmail.com">abcd@gmail.com</a>
+              </li>
+
+              <li>
+                <i class="fa fa-thin fa-phone me-2"></i> Phone: 
+                <a href="tel:+91-0000000000">+91-0000000000</a>
+              </li>
+
+              <li>
+                <i class="fa fa-thin fa-phone-volume me-2"></i> Phone: 
+                  <a href="tel:+91-0000000000">+91-0000000000</a>
+              </li>
+            </ul>
+
+            <ul class="social-info d-flex mt-3">
+              <li>
+                <a href="https://www.facebook.com/" class="text-white me-2" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+                <li>
+                  <a href="https://twitter.com/" class="text-white me-2" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.google.com/" class="text-white me-2" target="_blank">
+                    <i class="fab fa-google"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" class="text-white me-2" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white me-2" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white me-2" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>                               
+            </ul>
+          </div>
+        </div>
+
       </div>
+      <hr>
 
           <div class="text-center py-2 text-white">
-            <h6>© 2020 Copyright</h6>
+            <h6>© 2022 Copyright</h6>
           </div>
      
     </div>
